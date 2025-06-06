@@ -1,0 +1,43 @@
+Estrutura Principal
+src/
+├── components/           # Componentes React reutilizáveis
+│   ├── ui/              # Componentes base do shadcn/ui
+│   ├── ImageUpload.tsx  # Upload de imagem com drag & drop
+│   ├── ColorPalette.tsx # Exibição da paleta de cores
+│   ├── BodyTypeResult.tsx # Resultado do tipo de corpo
+│   └── ClothingRecommendations.tsx # Sugestões de roupas
+├── pages/               # Páginas da aplicação
+│   ├── Index.tsx        # Página principal
+│   └── NotFound.tsx     # Página 404
+├── utils/               # Funções utilitárias
+│   └── imageAnalysis.ts # Lógica de análise de imagem
+├── hooks/               # Custom hooks React
+├── lib/                 # Bibliotecas e configurações
+│   └── utils.ts         # Utilitários gerais
+├── App.tsx              # Componente raiz da aplicação
+├── main.tsx             # Ponto de entrada
+└── index.css            # Estilos globais e design system
+Organização por Responsabilidade
+/components: Todos os componentes React são organizados aqui
+
+/ui: Componentes base do shadcn/ui (botões, cards, inputs, etc.)
+Componentes específicos: Cada funcionalidade tem seu próprio arquivo
+/pages: Cada rota da aplicação tem sua própria página
+
+/utils: Funções puras e lógica de negócio que não são componentes
+
+/hooks: Custom hooks para lógica reutilizável entre componentes
+
+/lib: Configurações, constantes e utilitários gerais
+
+Arquivos de Configuração na Raiz
+index.html - Template HTML
+vite.config.ts - Configuração do Vite
+tailwind.config.ts - Configuração do Tailwind CSS
+tsconfig.json - Configuração do TypeScript
+package.json - Dependências e scripts
+Esta estrutura facilita a manutenção, permite escalabilidade e segue as convenções da comunidade React. Cada arquivo tem uma responsabilidade específica e bem definida.
+
+A organização das pastas no projeto está estruturada de forma bem organizada e seguindo as melhores práticas do React/Vite. Aqui está como está organizado:
+
+Estrutura Principal
